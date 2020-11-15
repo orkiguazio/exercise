@@ -6,6 +6,6 @@ node {
     }
 
     stage("Trigger new build") {
-        build "${env.JOB_NAME}"
+        build(job: "${env.JOB_NAME}", propagate: false, wait: false)
     }
 }
