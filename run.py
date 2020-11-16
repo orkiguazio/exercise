@@ -1,11 +1,12 @@
 
 
-print("Hello, Iguazio\n")
-
 
 # import required modules 
 import requests, json 
-  
+
+
+print("Hello, Iguazio\n")
+
 # Enter your API key here 
 api_key = "4e424ef485cc49fff5bceea49a2625c0"
   
