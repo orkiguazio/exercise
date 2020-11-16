@@ -29,7 +29,6 @@ response = requests.get(complete_url)
 # python format data 
 x = response.json() 
 
-print(x)
 # Now x contains list of nested dictionaries 
 # Check the value of "cod" key is equal to 
 # "404", means city is found otherwise, 
