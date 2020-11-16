@@ -1,9 +1,6 @@
 node {
     checkout scm 
-    
-    stage("install python req") {
-        pip install -r requirements.txt
-    }
+
     stage("Run Python Script") {
         sh "python run.py"
     }
