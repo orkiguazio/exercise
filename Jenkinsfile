@@ -15,7 +15,7 @@ podTemplate(label: "${git_project}-${label}", inheritFrom: "docker-python") {
         common.notify_slack {
             withCredentials([string(credentialsId: git_deploy_user_token, variable: 'GIT_TOKEN')]) {
                 println("test")
-                def github_client = new Githubc("orkiguazio", "exercise", GIT_TOKEN, env.TAG_NAME)
+                def github_client = new Githubc("orkiguazio", "exercise", GIT_TOKEN, env.TAG_NAME, this)
                 println("The unstable tag: ${github_client.tag.docker}")
 
                 println("env.TAG_NAME: ${env.TAG_NAME}")
