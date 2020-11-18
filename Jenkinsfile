@@ -18,6 +18,8 @@ podTemplate(label: "${git_project}-${label}", inheritFrom: "docker-python") {
                 def github_client = new Githubc("orkiguazio", "exercise", GIT_TOKEN, "v0.1.15")
                 println("The unstable tag: ${github_client.tag.docker}")
 
+                println("env.TAG_NAME: ${env.TAG_NAME}")
+
             }
         }
     }
