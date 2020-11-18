@@ -22,7 +22,7 @@ podTemplate(label: "${git_project}-${label}", inheritFrom: "docker-python") {
 
                 github_client.releaseCi(true) {
                     sh "mkdir ./testtttt"
-                    sleep("200")
+                    sleep("20")
                 }
             }
         }
