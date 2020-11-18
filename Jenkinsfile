@@ -20,6 +20,9 @@ podTemplate(label: "${git_project}-${label}", inheritFrom: "docker-python") {
 
                 println("env.TAG_NAME: ${env.TAG_NAME}")
 
+                github_client.releaseCi(true) {
+                    sh "mkdir ./testtttt"
+                }
             }
         }
     }
