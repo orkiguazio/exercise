@@ -1,6 +1,8 @@
 
+label = "${UUID.randomUUID().toString()}"
 git_deploy_user_token = "iguazio-prod-git-user-token"
 git_deploy_user_private_key = "iguazio-prod-git-user-private-key"
+git_project = "ork-test"
 
 
 podTemplate(label: "${git_project}-${label}", inheritFrom: "docker-python") {
